@@ -1,0 +1,15 @@
+$primary-text-color: #1b1b1b;
+$secondary-text-color: #1b2024;
+$light-text-color: #6d6a6a;
+
+@mixin spanBefore {
+  content: "";
+  height: 1px;
+  background-color: $secondary-text-color;
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  width: 0;
+  margin: auto;
+  transition: width 0.2s ease-in-out;
+}
