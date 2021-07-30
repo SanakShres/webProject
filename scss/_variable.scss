@@ -2,6 +2,9 @@ $primary-text-color: #1b1b1b;
 $secondary-text-color: #1b2024;
 $light-text-color: #6d6a6a;
 
+$primary-bg-color: #fff;
+$secondary-bg-color: #f7f7f7;
+
 @mixin spanBefore {
   content: "";
   height: 1px;

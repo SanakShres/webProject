@@ -17,6 +17,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
 
     <!-- custom css -->
     <link rel="stylesheet" href="./style.css" />
@@ -105,45 +109,98 @@
                   <a href="#">
                     <span>Shop</span>
                   </a>
-                  <div class="dropdown-nav nested">
+                  <div class="dropdown-nav">
                     <div class="dropdown-nav__inner">
                       <ul>
-                        <li class="dropdown-nav__item">
-                          <a href="#" class="disabled">
+                        <li class="dropdown-nav__item nested-li">
+                          <a href="#">
                             <span>Shop One</span>
+                            <i class="fa fa-angle-right"></i>
                           </a>
-                          <ul>
-                            <li class="dropdown-nav__nested-items">
-                              <a href=""><span>Shop 1.1</span></a>
+                          <ul class="nested-dropdown-nav">
+                            <li class="nested-dropdown-nav__item">
+                              <a href="#">
+                                <span>Shop 1.1</span>
+                              </a>
                             </li>
-                            <li class="dropdown-nav__nested-items">
-                              <a href=""><span>Shop 1.2</span></a>
+                            <li class="nested-dropdown-nav__item">
+                              <a href="#">
+                                <span>Shop 1.2</span>
+                              </a>
+                            </li>
+                            <li class="nested-dropdown-nav__item">
+                              <a href="#">
+                                <span>Shop 1.3</span>
+                              </a>
                             </li>
                           </ul>
                         </li>
-                        <li class="dropdown-nav__item">
-                          <a href="#" class="disabled">
+                        <li class="dropdown-nav__item nested-li">
+                          <a href="#">
                             <span>Shop Two</span>
+                            <i class="fa fa-angle-right"></i>
                           </a>
-                          <ul>
-                            <li class="dropdown-nav__nested-items">
-                              <a href=""><span>Shop 2.1</span></a>
+                          <ul class="nested-dropdown-nav">
+                            <li class="nested-dropdown-nav__item">
+                              <a href="#">
+                                <span>Shop 2.1</span>
+                              </a>
                             </li>
-                            <li class="dropdown-nav__nested-items">
-                              <a href=""><span>Shop 2.2</span></a>
+                            <li class="nested-dropdown-nav__item">
+                              <a href="#">
+                                <span>Shop 2.2</span>
+                              </a>
+                            </li>
+                            <li class="nested-dropdown-nav__item">
+                              <a href="#">
+                                <span>Shop 2.3</span>
+                              </a>
                             </li>
                           </ul>
                         </li>
-                        <li class="dropdown-nav__item">
-                          <a href="#" class="disabled">
+                        <li class="dropdown-nav__item nested-li">
+                          <a href="#">
                             <span>Shop Three</span>
+                            <i class="fa fa-angle-right"></i>
                           </a>
-                          <ul>
-                            <li class="dropdown-nav__nested-items">
-                              <a href=""><span>Shop 3.1</span></a>
+                          <ul class="nested-dropdown-nav">
+                            <li class="nested-dropdown-nav__item">
+                              <a href="#">
+                                <span>Shop 3.1</span>
+                              </a>
                             </li>
-                            <li class="dropdown-nav__nested-items">
-                              <a href=""><span>Shop 3.2</span></a>
+                            <li class="nested-dropdown-nav__item">
+                              <a href="#">
+                                <span>Shop 3.2</span>
+                              </a>
+                            </li>
+                            <li class="nested-dropdown-nav__item">
+                              <a href="#">
+                                <span>Shop 3.3</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="dropdown-nav__item nested-li">
+                          <a href="#">
+                            <span>Shop Four</span>
+                            <i class="fa fa-angle-right"></i>
+                          </a>
+                          <ul class="nested-dropdown-nav">
+                            <li class="nested-dropdown-nav__item">
+                              <a href="#">
+                                <span>Shop 4.1</span>
+                              </a>
+                            </li>
+                            <li class="nested-dropdown-nav__item">
+                              <a href="#">
+                                <span>Shop 4.2</span>
+                              </a>
+                            </li>
+                            <li class="nested-dropdown-nav__item">
+                              <a href="#">
+                                <span>Shop 4.3</span>
+                              </a>
                             </li>
                           </ul>
                         </li>
@@ -286,12 +343,17 @@
             </div>
             <div class="cart-holder">
               <a href="" class="cart-info">
-                <span class="cart-icon" data-cart-number="0"
+                <span class="cart-icon" data-cart-number="3"
                   ><i class="fa fa-shopping-cart"></i>
                 </span>
                 <span class="cart-text"> Cart </span>
                 <span class="cart-value">($0)</span>
               </a>
+            </div>
+            <div class="mobile-nav-menu">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
             </div>
           </div>
         </div>
@@ -344,19 +406,97 @@
               </div>
               <div class="banner-slider__text">
                 <div class="banner-caption">
-                  Send <span>flowers</span> like you mean it.
+                  Send <span class="change-color">flowers</span> like you mean
+                  it.
                 </div>
                 <div class="banner-description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Fugiat repellendus reprehenderit culpa natus aperiam non,
                   aliquam nostrum similique sequi harum! Consectetur ab adipisci
-                  sint error mollitia, distinctio nam necessitatibus id ex,
-                  enim, facere quia dolore quae non molestiae neque minima.
+                  sint error mollitia.
                 </div>
               </div>
             </div>
           </section>
           <!-- banner slider section end -->
+
+          <!-- video page section -->
+          <section class="video-section-wrapper">
+            <div class="video-section-inner">
+              <div class="video-section__row">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="video-link-holder">
+                      <div class="video-link__image">
+                        <figure>
+                          <img
+                            src="./images/boris-smokrovic-aolmXcUxr7Y-unsplash.jpg"
+                            alt=""
+                          />
+                        </figure>
+                      </div>
+                      <a
+                        href="https://www.youtube.com"
+                        class="video-link__button"
+                      >
+                        <div class="video-link__button-circle">
+                          <div class="video-link__button-play">
+                            <i class="fa fa-play"></i>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="section-content-holder">
+                      <div class="section-content-inner">
+                        <div class="section-content__title">
+                          <h2 class="section-title">
+                            Surprise Your
+                            <span class="change-color">Valentine!</span
+                            ><br />Lorem ipsum dolor sit.
+                          </h2>
+                          <p class="section-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Deleniti sunt temporibus nulla officia odio
+                            sapiente!
+                          </p>
+                        </div>
+                        <div class="space-between"></div>
+                        <div class="section-content__text">
+                          <div class="icon-lists">
+                            <div class="section-icon">
+                              <i class="fa fa-heart"></i>
+                            </div>
+                            <p class="section-text">
+                              Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                          </div>
+                          <div class="icon-lists">
+                            <div class="section-icon">
+                              <i class="fa fa-heart"></i>
+                            </div>
+                            <p class="section-text">
+                              Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                          </div>
+                          <div class="icon-lists">
+                            <div class="section-icon">
+                              <i class="fa fa-heart"></i>
+                            </div>
+                            <p class="section-text">
+                              Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- video page section end -->
         </div>
       </div>
     </div>
@@ -368,34 +508,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-      //dropdown on hover
-      $(".main-navbar__navlinks").hover(function () {
-        $(this).children(".dropdown-nav").stop().slideToggle(400); //fadeToggle
 
-        $(this).children("a").toggleClass("current");
+    <script>
+      // //dropdown on hover
+      // $(".main-navbar__navlinks").hover(function () {
+      //   $(this).children(".dropdown-nav").stop().slideToggle(400); //fadeToggle
+
+      //   // $(this).children("a").toggleClass("current");
+      // });
+
+      // //nested dropdown
+      // $(".nested-li").hover(function () {
+      //   $(this).children(".nested-dropdown-nav").stop().slideToggle(400); //fadeToggle
+      // });
+
+      //dropdown on click
+      $(".main-navbar__navlinks > a").click(function () {
+        // $(this).parent().siblings().find(".dropdown-nav").slideUp(50);
+        $(this).next(".dropdown-nav").stop(true, false, true).slideToggle(400);
       });
 
       //nested dropdown
-      $(".nested-li").hover(function () {
-        $(this).children(".nested-dropdown-nav").stop().slideToggle(400); //fadeToggle
+      $(".nested-li > a").click(function () {
+        // $(this).parent().siblings().find(".nested-dropdown-nav").slideUp(50); //fadeToggle
+        $(this)
+          .next(".nested-dropdown-nav")
+          .stop(true, false, true)
+          .slideToggle(400);
 
-        $(this).children("a").toggleClass("current");
+        // caret icon change on click
+        // $(this).parent().siblings().find("a").removeClass("active");
+        $(this).toggleClass("active");
       });
-
-      //dropdown on click
-      // $(".main-navbar__navlinks > a").click(function () {
-      // $(this).parent().siblings().find(".dropdown-nav").slideUp(50);
-      // $(this).next(".dropdown-nav").stop(true, false, true).slideToggle(400);
-
-      // class toggle
-      //   $(this).parent().siblings().find("a").hasClass("current")
-      //     ? $(this).parent().siblings().find("a").removeClass("current")
-      //     : "";
-      //   $(this).toggleClass("current");
-      //   return false;
-      // });
 
       $(".search-bar").click(function () {
         $(this)
@@ -412,6 +558,12 @@
           .slideUp(50);
 
         return false;
+      });
+
+      // mobile nav menu open close
+      $(".mobile-nav-menu").click(function () {
+        $(this).toggleClass("toggle");
+        $(this).siblings("nav.main-navbar").slideToggle(250);
       });
 
       // banner slider with owl carousel
