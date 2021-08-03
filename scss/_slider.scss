@@ -35,7 +35,7 @@ section.banner-slides-container {
         > img.banner-image {
         transform: scale(1.1);
       }
-      .owl-dots {
+      & .owl-dots {
         position: absolute;
         bottom: 3%;
         left: 50%;
@@ -135,7 +135,8 @@ section.banner-slides-container {
     }
   }
 }
-
+/* main-content slider responsive
+*/
 @media screen and (max-width: 1024px) {
   section.banner-slides-container > .banner-slider > .banner-slider__text {
     font-size: 10px;
@@ -182,3 +183,5 @@ section.banner-slides-container {
     }
   }
 }
+/* main-content slider responsive end
+*/

@@ -271,7 +271,8 @@ header.main-page-header {
     }
   }
 }
-
+/* header responsive
+*/
 @media screen and (max-width: 1200px) {
   header.main-page-header > .main-topbar {
     max-width: 950px;
@@ -380,3 +381,5 @@ header.main-page-header {
     }
   }
 }
+/* header responsive end
+*/
