@@ -1,0 +1,85 @@
+section.parallax-background {
+  background: url("./images/section-bg.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section.page-section-wrapper
+  > .page-section-inner
+  > .page-section__row
+  > .section-row-wrapper
+  > .section-row-content
+  > .section-form-content {
+  padding: 50px 0;
+  text-align: center;
+  font-size: 12px;
+  & > h3.section-title {
+    color: $primary-bg-color;
+    font-size: 3em;
+    line-height: 1.5em;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+  }
+  & > .space-between {
+    height: 12px;
+  }
+  & > .section-form-holder {
+    width: 100%;
+    & > form > .sub-form-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-family: "Montserrat", sans-serif;
+      & > * {
+        margin-bottom: 10px;
+        line-height: 42px;
+        letter-spacing: 0.05em;
+        border: 0;
+        border-radius: 0;
+        outline: 0;
+        box-shadow: none;
+        -webkit-appearance: none;
+        height: 60px;
+      }
+      & > input {
+        padding: 0 15px;
+        color: $light-text-color;
+        background-color: $primary-bg-color;
+        font-size: 1em;
+      }
+      & > button.subscribe-btn {
+        padding: 0 42px;
+        color: $primary-bg-color;
+        background-color: #f34f3f;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+/* main-content subscribe form section responsive
+*/
+@media screen and (max-width: 684px) {
+  section.page-section-wrapper
+    > .page-section-inner
+    > .page-section__row
+    > .section-row-wrapper
+    > .section-row-content
+    > .section-form-content {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 484px) {
+  section.page-section-wrapper
+    > .page-section-inner
+    > .page-section__row
+    > .section-row-wrapper
+    > .section-row-content
+    > .section-form-content
+    > .section-form-holder
+    > form
+    > .sub-form-group {
+    flex-wrap: wrap;
+  }
+}
+/* main-content subscribe form section responsive end
+*/

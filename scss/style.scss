@@ -48,6 +48,8 @@ section.page-section-wrapper {
 
 @import "teams";
 
+@import "subscribe";
+
 @import "blog";
 
 /* main-content section responsive
@@ -74,7 +76,7 @@ section.page-section-wrapper {
 }
 @media screen and (max-width: 644px) {
   section.page-section-wrapper > .page-section-inner {
-    max-width: 480px;
+    max-width: 540px;
   }
 }
 @media screen and (max-width: 480px) {
