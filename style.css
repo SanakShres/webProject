@@ -1280,6 +1280,15 @@ section.page-section-wrapper
   color: #1b1b1b;
   text-align: center;
   text-decoration: none;
+  transition: all 250ms ease-in-out;
+}
+
+section.page-section-wrapper
+> .page-section-inner
+> .page-section__row
+> .section-row-wrapper
+> .section-row-content > .section-blog-wrapper > ul.blog-list > li.blog-list__item > .blog-holder > .blog-image-holder > .blog-info-date > a:hover {
+  color: #f34f3f;
 }
 
 section.page-section-wrapper

@@ -72,6 +72,10 @@ section.page-section-wrapper
                 color: $primary-text-color;
                 text-align: center;
                 text-decoration: none;
+                transition: all 250ms ease-in-out;
+                &:hover {
+                  color: #f34f3f;
+                }
               }
             }
           }
