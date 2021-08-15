@@ -1,0 +1,169 @@
+section.page-section-wrapper > .page-section-inner > .page-section__row {
+  & .video-link-holder {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    & > .video-link__image {
+      overflow: hidden;
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 1px 5px 0 $light-text-color;
+      & > figure {
+        margin: 0;
+        & > img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          border-radius: inherit;
+          transition: all 450ms ease-in-out;
+        }
+      }
+    }
+    &:hover {
+      & > .video-link__image > figure > img {
+        transform: scale(1.08);
+      }
+    }
+    & > a.video-link__button {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      text-decoration: none;
+      & > .video-link__button-circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto;
+        background-color: $primary-bg-color;
+        position: relative;
+        top: 50%;
+        left: 0;
+        display: block;
+        transform: translateY(-50%);
+        & > .video-link__button-play {
+          display: block;
+          position: absolute;
+          left: 52%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 30px;
+          color: #f34f3f;
+        }
+      }
+    }
+  }
+  & .section-content-holder {
+    width: 100%;
+    & > .section-content-inner {
+      padding: 0 20px;
+      & > .section-content__title {
+        font-size: 12px;
+        & > h2.section-title {
+          font-size: 3.15em;
+          white-space: normal;
+          line-height: 50px;
+          font-weight: 400;
+          color: $secondary-text-color;
+          letter-spacing: 0px;
+          font-family: "Playfair Display";
+          & > span.change-color {
+            color: #f34f3f;
+            font-family: "Playfair Display";
+          }
+        }
+        & > p.section-text {
+          font-size: 1.4em;
+          white-space: normal;
+          line-height: 28px;
+          font-weight: 400;
+          color: $light-text-color;
+          letter-spacing: 0px;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          margin-top: 20px;
+        }
+      }
+      & > .space-between {
+        height: 25px;
+      }
+      & > .section-content__text {
+        font-size: 12px;
+        & > .icon-lists {
+          margin-bottom: 10px;
+          display: flex;
+          & > .section-icon {
+            font-size: 1.4em;
+            color: #f34f3f;
+            margin-right: 15px;
+          }
+          & > p.section-text {
+            font-size: 1.4em;
+            white-space: normal;
+            font-weight: 400;
+            color: $light-text-color;
+            letter-spacing: 0px;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* main-content video section responsive
+*/
+@media screen and (max-width: 1024px) {
+  section.page-section-wrapper
+    > .page-section-inner
+    > .page-section__row
+    .section-content-holder
+    > .section-content-inner {
+    & > .section-content__title {
+      font-size: 10px;
+    }
+    & > .section-content__text {
+      font-size: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section.page-section-wrapper > .page-section-inner {
+    & > .page-section__row {
+      .video-link-holder > a.video-link__button > .video-link__button-circle {
+        width: 60px;
+        height: 60px;
+        & > .video-link__button-play {
+          font-size: 24px;
+        }
+      }
+      .section-content-holder > .section-content-inner {
+        & > .section-content__title {
+          font-size: 8px;
+          & > h2.section-title {
+            line-height: 42px;
+          }
+        }
+        & > .section-content__text {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+}
+/* main-content video section responsive end
+*/

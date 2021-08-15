@@ -1,0 +1,101 @@
+section.page-section-wrapper
+  > .page-section-inner
+  > .page-section__row
+  > .section-row-wrapper
+  > .section-row-content {
+  & > .section-team-content {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    font-size: 12px;
+    text-align: center;
+    & > h2.section-title {
+      font-size: 3.6em;
+      line-height: 1.5em;
+      color: $primary-text-color;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+    & > p.section-text {
+      font-size: 1.4em;
+      line-height: 2em;
+      color: $light-text-color;
+    }
+  }
+  & > .section-team-wrapper {
+    max-width: 100%;
+    padding-bottom: 18px;
+    & .team-holder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 15px;
+      & > .team-image-holder {
+        max-width: 100%;
+        & > figure > img {
+          border-radius: 50%;
+          width: 100%;
+          width: 222px;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      & > .team-info-holder {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 12px;
+        display: inline-block;
+        & > h6.team-name {
+          color: $primary-text-color;
+          font-family: "Montserrat";
+          font-size: 1.1em;
+          line-height: 2em;
+          font-weight: 550;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+        }
+        & > span.team-position {
+          color: $light-text-color;
+          font-family: "Montserrat";
+          font-size: 1.1em;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+    & .owl-dots {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      & > button.owl-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        background: #f89d9d;
+        margin: 0 8px;
+        outline: none;
+        &.active {
+          background-color: #f34f3f;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+/* main-content teams section responsive
+*/
+@media screen and (max-width: 680px) {
+  section.page-section-wrapper
+    > .page-section-inner
+    > .page-section__row
+    > .section-row-wrapper
+    > .section-row-content
+    > .section-team-content {
+    font-size: 10px;
+  }
+}
+/* main-content teams section responsive end
+  */
