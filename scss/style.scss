@@ -6,6 +6,13 @@
   font-family: Montserrat, sans-serif;
 }
 
+a {
+  text-decoration: none !important;
+}
+ul {
+  list-style-type: none !important;
+}
+
 @import "header";
 
 .main-wrapper {
@@ -35,6 +42,7 @@ section.page-section-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         & > .section-row-content {
           width: 100%;
           padding: 0 20px;
@@ -43,6 +51,8 @@ section.page-section-wrapper {
     }
   }
 }
+
+@import "category";
 
 @import "video";
 
