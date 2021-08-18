@@ -1,28 +1,30 @@
 /* css for Footer starrts */
-
+.footer {
+  background-color: #1b2024;
+}
 .footer-container {
-  background-color: #62666e;
-  max-width: 100%;
-  margin: auto;
-  padding-left: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 70px;
 }
 
-.row {
+/* .row {
   display: flex;
   flex-wrap: wrap;
 }
 
 ul {
   list-style: none;
-}
+} */
 
 .footer-col {
   width: 25%;
-  padding: 70px 0;
 }
 
 .footer-col h4 {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   text-transform: capitalize;
   margin-bottom: 35px;
@@ -45,7 +47,7 @@ ul {
 }
 
 .footer-col ul li a {
-  font-size: 16px;
+  font-size: 13px;
   text-transform: capitalize;
   color: #ffffff;
   text-decoration: none;
@@ -71,14 +73,13 @@ hr.rounded {
 }
 
 .footer-base p {
-  font-size: 18px;
+  font-size: 14px;
   color: #fff;
   margin-top: 15px;
   text-transform: capitalize;
 }
 .footer-base {
   width: 25%;
-  padding: 70px 0;
 }
 
 .footer-base .icons a {
